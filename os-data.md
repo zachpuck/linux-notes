@@ -7,3 +7,4 @@ cat /proc/cmdline
 
 # list block devices
 lsblk
+
