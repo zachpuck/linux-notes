@@ -82,8 +82,8 @@ configuration:
 `mpstat -P ALL` - stats on all processes
 
 ## reporting with sar (system activity reporting)
-`sar -u`
 `sar` - default is cpu utilization
+`sar -u`- cpu
 `sar -r` - report on memory utilization
 `sar -b` - disk io 
 `sar -n DEV` - network
@@ -94,5 +94,5 @@ cd /var/log
 sa dir - system activity files
 
 `sar -s 14:50:00 -e 15:10:00` - specific start and end time for report
-`-f` to switch log files `/var/log/sa15`
+`sar -f /var/log/sa15` to switch log files
 
