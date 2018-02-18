@@ -95,7 +95,10 @@ list details of one process
 `ps -p <pid>`
 
 ### working with pri and ni
-default nice value of 0
+default nice value of `0`
+range -20 to +19
+process priority is range of 60-99
+
 `nice -n 19 sleep 1000` - sets it to the lowest priority
 
 higher the `pri` number the lower the priority
