@@ -15,7 +15,7 @@
 ### SELinux logs
 `tail /var/log/audit/audit.log` -> all the audit logs
 
-`ausearch` -> read the selinux logs
+`ausearch -m avc` -> search the selinux logs using acess vector control module
 
 `ls -Z /etc/shadow`
 
