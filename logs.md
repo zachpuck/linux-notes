@@ -26,3 +26,21 @@ su and sudo
 
 `grep sudo /var/log/secure*` -> look for sudo events in all of the secure log files
 
+## scripting with awk
+`tail -n 1 /var/log/secure`
+
+`awk '/sudo/ { print $0 }' secure` -> search the secure file for lines containing sudo
+
+to print out just field five: space seperated
+`awk '/sudo/ { print $5 }' secure`
+`awk '/sudo/ { print $5, $6, $14 }' secure`
+
+`vim secure.sh`
+```
+#!/sur/bin/bash
+awk "/$1/ { print \$5,\$6,\$14}" $2
+```
+to run the script
+`./secure.sh su: /var/log/secure` -> looks for the su events ($1) in the file provided ($2). and prints out the fields 
+
+
