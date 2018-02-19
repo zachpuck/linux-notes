@@ -59,7 +59,7 @@ gpgcheck=0
 
 `yum update` -> would show "update" for everything except for kernel it would show "install"
 
-`vim yum.conf`
+`vim /etc/yum.conf`
 ```
 exclude=kernel*
 ```
