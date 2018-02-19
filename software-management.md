@@ -1,9 +1,12 @@
 ### RPM
 `tree /var/cache/yum` -> yum cache
 
+`rpm -qa`
+`rpm -i <name.rpm>`
+`rpm -e nmap`
 `rpm -ql nmap` -> see what is included with a package
-
-`rpm -V setup` -> verifying a pkg.
+`rpm -qpl <name.rpm>`
+`rpm -V nmap` -> verifying a pkg.
 
 ### yum
 `yum install tree`
