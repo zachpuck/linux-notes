@@ -17,3 +17,12 @@
 
 `sudo lastb` -> last bad login attempts (failed passwords)
 
+## auditing root access
+su and sudo
+
+`ls /var/log/secure*`
+
+`less secure` -> secure events like policy, su, and sudo
+
+`grep sudo /var/log/secure*` -> look for sudo events in all of the secure log files
+
