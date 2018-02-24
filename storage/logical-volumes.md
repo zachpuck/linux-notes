@@ -45,7 +45,7 @@ extend the logical volume structure
 `vgextend vg1 /dev/sdb12`
 `vgs`
 `lvextend -L +50m /dev/vg1/lv1`
-`xfs_growfs /lvm` -> resize file system while online
+`xfs_growfs /lvm` -> resize file system while online (`resize2fs` for ext4 file systems)
 `df -h /lvm` -> will now show increased size
 
 ### lvm snaphsots
