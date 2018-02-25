@@ -36,6 +36,8 @@ find /usr/share/doc -name '*.pdf' -exec cp {} /lvm \; -> find all pdfs in doc di
 checking space
 df -h
 
+`df -hT` -> 'T' shows the type of file system
+
 ### resizing lvm
 in case of low space
 extend the logical volume structure
