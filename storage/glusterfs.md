@@ -7,7 +7,7 @@ install latest glusterfs-server
 
 create directorys on the mounted volumes (ex: /gfs/data1)
 
-`gluster peer probe server2.example.com`
+`gluster peer probe server2.example.com` -> create pool
 
 `gluster peer status`
 
